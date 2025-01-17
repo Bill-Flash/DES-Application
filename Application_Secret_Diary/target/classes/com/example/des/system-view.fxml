@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="479.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.des.controller.SystemViewController">
+   <children>
+      <ImageView fx:id="homeImg" fitHeight="346.0" fitWidth="251.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/homepage-image.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="44.0" text="It keeps Secret!">
+         <font>
+            <Font name="Monaco" size="36.0" />
+         </font></Label>
+      <HBox layoutX="291.0" layoutY="227.0" spacing="100.0">
+         <children>
+            <Button layoutX="289.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleWriteBtnAction" prefHeight="50.0" prefWidth="120.0" text="Write Diary">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font></Button>
+            <Button layoutX="466.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleSearchBtnAction" prefHeight="50.0" prefWidth="120.0" text="Search Diary">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <Separator layoutX="210.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" ellipsisString="" layoutX="357.0" layoutY="438.0" maxHeight="-Infinity" prefHeight="38.0" prefWidth="318.0" text="Welcome Back to My Lord!" wrapText="true" AnchorPane.leftAnchor="357.0">
+         <font>
+            <Font name="Charter Black" size="22.0" />
+         </font></Label>
+      <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="461.0" layoutY="391.0" prefHeight="50.0" prefWidth="200.0" text="(*╹▽╹*)" />
+   </children>
+</AnchorPane>
